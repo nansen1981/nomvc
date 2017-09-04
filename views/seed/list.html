@@ -1,0 +1,15 @@
+<img src="{ROOT}/images/1.jpg"/>
+<table>
+	<tr>
+		<td>tag</td>
+		<td>index{HASH}</td>
+		<td></td>
+	</tr>
+	#for(var i=0;i<viewBag.list.length;i++){
+	<tr>
+		<td>##viewBag.list[i].fd_seed_tag#</td>
+		<td>##viewBag.list[i].fd_seed_index#</td>
+		<td><a href="{ROOT}/seed/edit?tag=##viewBag.list[i].fd_seed_tag#">修改</a><a href="{ROOT}/seed/del?tag=##viewBag.list[i].fd_seed_tag#">删除</a></td>
+	</tr>
+	#}
+</table>

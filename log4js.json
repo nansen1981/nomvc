@@ -1,0 +1,18 @@
+{
+  "appenders": {
+	"default": { "type": "dateFile", "filename": "logs/log.log" ,"pattern": ".yyyy-MM-dd-hh"},
+	"sql": { "type": "dateFile", "filename": "logs/sql.log" ,"pattern": ".yyyy-MM-dd-hh"},
+	"debug": { "type": "dateFile", "filename": "logs/debug.log" ,"pattern": ".yyyy-MM-dd-hh"},
+	"info": { "type": "dateFile", "filename": "logs/info.log" ,"pattern": ".yyyy-MM-dd-hh"},
+	"warn": { "type": "dateFile", "filename": "logs/warn.log" ,"pattern": ".yyyy-MM-dd-hh"},
+	"error": { "type": "dateFile", "filename": "logs/error.log" ,"pattern": ".yyyy-MM-dd-hh"}
+  },
+  "categories": {
+	"default": { "appenders": [ "default" ], "level": "debug" },
+	"sql": { "appenders": [ "sql" ], "level": "debug" },
+	"debug": { "appenders": [ "debug" ], "level": "debug"},
+	"info": { "appenders": [ "info" ], "level": "info" },
+	"warn": { "appenders": [ "warn" ], "level": "warn" },
+	"error": { "appenders": [ "error" ], "level": "error" }
+  }
+}
