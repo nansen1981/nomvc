@@ -3,6 +3,7 @@ var app = express();
 var fs = require('fs'); // 此模板引擎依赖 fs 模块
 var template = require("./lib/hView");
 var config = require("./config");
+var log4 = require("./lib/log4");
 app.engine('html', function (filePath, options, callback) { // 定义模板引擎
   fs.readFile(filePath, function (err, content) {
     if (err) return callback(new Error(err));
@@ -31,9 +32,6 @@ var options = {
   }
 }
 
-var log = require('./lib/log4');  
-log.use(app);  
-
 app.use(express.static('static', options));
 
 var bodyParser = require('body-parser');
@@ -50,6 +48,7 @@ app.use('/:controller?/:action?', function (req, res, next) {
 	if(req.params.action){  
 		actionName = req.params.action;  
 	}
+	log4.request(req.ip + req.baseUrl + req.path);
 	var filter = require("./filter/filter.js");
 	if(filter.execute(req,res,controllerName,actionName)){
 		next();

@@ -5,7 +5,8 @@
 	"debug": { "type": "dateFile", "filename": "logs/debug.log" ,"pattern": ".yyyy-MM-dd-hh"},
 	"info": { "type": "dateFile", "filename": "logs/info.log" ,"pattern": ".yyyy-MM-dd-hh"},
 	"warn": { "type": "dateFile", "filename": "logs/warn.log" ,"pattern": ".yyyy-MM-dd-hh"},
-	"error": { "type": "dateFile", "filename": "logs/error.log" ,"pattern": ".yyyy-MM-dd-hh"}
+	"error": { "type": "dateFile", "filename": "logs/error.log" ,"pattern": ".yyyy-MM-dd-hh"},
+	"request": { "type": "dateFile", "filename": "logs/error.log" ,"pattern": ".yyyy-MM-dd-hh"}
   },
   "categories": {
 	"default": { "appenders": [ "default" ], "level": "debug" },
@@ -13,6 +14,7 @@
 	"debug": { "appenders": [ "debug" ], "level": "debug"},
 	"info": { "appenders": [ "info" ], "level": "info" },
 	"warn": { "appenders": [ "warn" ], "level": "warn" },
-	"error": { "appenders": [ "error" ], "level": "error" }
+	"error": { "appenders": [ "error" ], "level": "error" },
+	"request": { "appenders": [ "request" ], "level": "debug" }
   }
 }
