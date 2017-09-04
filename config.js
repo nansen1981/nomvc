@@ -1,5 +1,5 @@
 var db = {
-	host : '192.168.1.14',
+	host : '127.0.0.1',
 	database : 'dog',
 	user : 'dog',
 	port : 3306,

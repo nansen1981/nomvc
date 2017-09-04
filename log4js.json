@@ -6,7 +6,7 @@
 	"info": { "type": "dateFile", "filename": "logs/info.log" ,"pattern": ".yyyy-MM-dd-hh"},
 	"warn": { "type": "dateFile", "filename": "logs/warn.log" ,"pattern": ".yyyy-MM-dd-hh"},
 	"error": { "type": "dateFile", "filename": "logs/error.log" ,"pattern": ".yyyy-MM-dd-hh"},
-	"request": { "type": "dateFile", "filename": "logs/error.log" ,"pattern": ".yyyy-MM-dd-hh"}
+	"request": { "type": "dateFile", "filename": "logs/request.log" ,"pattern": ".yyyy-MM-dd-hh"}
   },
   "categories": {
 	"default": { "appenders": [ "default" ], "level": "debug" },
