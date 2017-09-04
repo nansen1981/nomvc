@@ -1,2 +1,0 @@
-[2017-09-04 15:46:21.650] [DEBUG] sql - select * from dt_seed where fd_seed_tag = ?["1"]
-[2017-09-04 15:46:22.749] [DEBUG] sql - select * from dt_seed where fd_seed_tag = ?["1"]
